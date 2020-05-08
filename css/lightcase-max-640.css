@@ -1,0 +1,75 @@
+/*
+ * Lightcase - jQuery Plugin
+ * The smart and flexible Lightbox Plugin.
+ *
+ * @author		Cornel Boppart <cornel@bopp-art.com>
+ * @copyright	Author
+ *
+ * @version		2.1.0 (25/04/2015)
+ */
+
+/* Reduced layout for small devices */
+@media screen and (max-width: 640px) {
+
+	/* Overlay */
+	#lightcase-overlay {
+		background: #333;
+	}
+
+	/* Loading */
+	#lightcase-loading {
+		color: #fff;
+		text-shadow: 0 0 15px #fff;
+	}
+	
+	/* Navigation */
+
+	#lightcase-nav a {
+		position: absolute;
+		z-index: 9999;
+		bottom: 15px;
+
+		outline: none;
+		cursor: pointer;
+		font-size: 24px;
+	}
+	#lightcase-nav a:hover {
+		text-shadow: 0 0 15px #fff;
+	}
+
+	/* Icon positioning */
+	#lightcase-nav .lightcase-icon-close {
+		position: absolute;
+		z-index: 9997;
+		top: 15px;
+		right: 15px;
+
+		opacity: 0;
+	}
+
+	#lightcase-nav .lightcase-icon-pause,
+	#lightcase-nav .lightcase-icon-play {
+		left: 50%;
+		margin-left: -0.5em;
+	}
+	#lightcase-nav .lightcase-icon-prev {
+		left: 15px;
+	}
+	#lightcase-nav .lightcase-icon-next {
+		right: 15px;
+	}
+
+	/* Error message */
+	#lightcase-case p.lightcase-error {
+		padding: 30px 0;
+		font-size: 17px;
+		text-align: center;
+		
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		color: #aaa;
+	}
+
+}
